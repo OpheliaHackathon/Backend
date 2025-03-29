@@ -4,7 +4,7 @@ include 'Handler/funzioni.php';
 
 header('Content-Type: application/json');
 
-define('OPENAI_API_KEY', 'chiave_qui');
+define('OPENAI_API_KEY', getenv('OPENAI_API_KEY'));
 
 try {
     // Verifica il token dall'header

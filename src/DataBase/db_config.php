@@ -1,9 +1,9 @@
 <?php
 /*Configurazioni per la connessione con il DataBase*/
 
-$HOSTNAME = "mysql_container";
-$USERNAME = "root";
-$PASSWORD = "123456";
-$DBNAME = "CarbonQuestDB";
+$HOSTNAME = getenv('DB_HOST') ?: 'localhost';
+$USERNAME = getenv('DB_USER') ?: 'root';
+$PASSWORD = getenv('DB_PASS') ?: '123456';
+$DBNAME = getenv('DB_NAME') ?: 'CarbonQuestDB';
 
 ?>
